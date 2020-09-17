@@ -28,6 +28,16 @@ from traitlets.config import Config
 from androguard.core.androconf import *
 from androguard.misc import *
 from androguard.session import Session
+from __future__ import print_function
+
+from optparse import OptionParser
+
+from IPython.terminal.embed import InteractiveShellEmbed
+from traitlets.config import Config
+
+from androguard.core.androconf import *
+from androguard.misc import *
+from androguard.session import Session
 
 option_0 = {
     'name': ('-s', '--shell'),
