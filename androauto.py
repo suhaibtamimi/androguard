@@ -25,6 +25,13 @@ import sys
 from optparse import OptionParser
 from androguard.core.analysis import auto
 
+from __future__ import print_function
+from builtins import object
+import sys
+
+from optparse import OptionParser
+from androguard.core.analysis import auto
+
 option_0 = {
     'name': ('-d', '--directory'),
     'help': 'directory input',
