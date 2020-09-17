@@ -36,13 +36,6 @@ except:
 from optparse import OptionParser
 from androguard.core import androconf
 
-import sys, os
-import hashlib, urllib, urllib2, json
-try:
-    import requests
-except:
-    print '[Warning] request module is missing. requests module is required in order to upload new files for scan.\nYou can install it by running: pip install requests.'
-
 from optparse import OptionParser
 from androguard.core import androconf
 
