@@ -27,15 +27,6 @@ import codecs
 from androguard.core import androconf
 from androguard.core.bytecodes import apk
 from androguard.util import read
-from __future__ import print_function
-import sys
-from optparse import OptionParser
-from xml.dom import minidom
-import codecs
-
-from androguard.core import androconf
-from androguard.core.bytecodes import apk
-from androguard.util import read
 
 from __future__ import print_function
 import sys
