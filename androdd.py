@@ -13,6 +13,17 @@ from androguard.core import androconf
 from androguard.core.bytecode import method2dot, method2format
 from androguard.core.bytecodes import dvm
 from androguard.decompiler import decompiler
+import os
+import re
+import shutil
+import sys
+from optparse import OptionParser
+
+from androguard import session
+from androguard.core import androconf
+from androguard.core.bytecode import method2dot, method2format
+from androguard.core.bytecodes import dvm
+from androguard.decompiler import decompiler
 
 option_0 = {
     'name': ('-i', '--input'),
