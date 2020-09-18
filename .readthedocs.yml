@@ -4,3 +4,4 @@ python:
     extra_requirements:
         - docs
         - GUI
+
