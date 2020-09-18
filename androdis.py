@@ -32,6 +32,52 @@ option_0 = {
     'name': ('-i', '--input'),
     'help': 'file : use this filename (DEX/ODEX)',
     'nargs': 1
+
+    # along with Androguard.  If not, see <http://www.gnu.org/licenses/>.
+
+from __future__ import print_function
+
+from optparse import OptionParser
+
+from androguard.core.bytecodes import dvm
+from androguard.core.bytecodes.apk import *
+
+
+
+option_0 = {
+    'name': ('-i', '--input'),
+    'help': 'file : use this filename (DEX/ODEX)',
+    'nargs': 1
+    # along with Androguard.  If not, see <http://www.gnu.org/licenses/>.
+
+from __future__ import print_function
+
+from optparse import OptionParser
+
+from androguard.core.bytecodes import dvm
+from androguard.core.bytecodes.apk import *
+
+
+
+option_0 = {
+    'name': ('-i', '--input'),
+    'help': 'file : use this filename (DEX/ODEX)',
+    'nargs': 1
+    # along with Androguard.  If not, see <http://www.gnu.org/licenses/>.
+
+from __future__ import print_function
+
+from optparse import OptionParser
+
+from androguard.core.bytecodes import dvm
+from androguard.core.bytecodes.apk import *
+
+
+
+option_0 = {
+    'name': ('-i', '--input'),
+    'help': 'file : use this filename (DEX/ODEX)',
+    'nargs': 1
 }
 option_1 = {
 from optparse import OptionParser
