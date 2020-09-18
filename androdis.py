@@ -32,6 +32,28 @@ option_0 = {
     'nargs': 1
 }
 option_1 = {
+from optparse import OptionParser
+
+from androguard.core.bytecodes import dvm
+from androguard.core.bytecodes.apk import *
+
+option_0 = {
+    'name': ('-i', '--input'),
+    'help': 'file : use this filename (DEX/ODEX)',
+    'nargs': 1
+}
+option_1 = {
+from optparse import OptionParser
+
+from androguard.core.bytecodes import dvm
+from androguard.core.bytecodes.apk import *
+
+option_0 = {
+    'name': ('-i', '--input'),
+    'help': 'file : use this filename (DEX/ODEX)',
+    'nargs': 1
+}
+option_1 = {
     'name': ('-o', '--offset'),
     'help': 'offset to disassemble',
     'nargs': 1

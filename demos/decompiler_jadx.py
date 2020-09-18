@@ -6,15 +6,7 @@ from androguard.core.androconf import show_logging
 import logging
 
 # Enable log output
-show_logging(level=logging.DEBUG)
 
-# Load our example APK
-a = APK("examples/android/TestsAndroguard/bin/TestActivity.apk")
-
-# Create DalvikVMFormat Object
-d = DalvikVMFormat(a)
-# Create Analysis Object
-dx = Analysis(d)
 
 # Load the decompiler
 # Set the path to the jadx executable!
@@ -28,3 +20,12 @@ d.set_vmanalysis(dx)
 for m in d.get_methods()[:10]:
     print(m)
     print(decompiler.get_source_method(m))
+show_logging(level=logging.DEBUG)
+
+# Load our example APK
+a = APK("examples/android/TestsAndroguard/bin/TestActivity.apk")
+
+# Create DalvikVMFormat Object
+d = DalvikVMFormat(a)
+# Create Analysis Object
+dx = Analysis(d)

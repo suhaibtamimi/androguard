@@ -5,3 +5,24 @@ python:
         - docs
         - GUI
 
+python:
+    version: 3
+    pip_install: true
+    extra_requirements:
+        - docs
+        - GUI
+
+python:
+    version: 3
+    pip_install: true
+    extra_requirements:
+        - docs
+        - GUI
+
+python:
+    version: 3
+    pip_install: true
+    extra_requirements:
+        - docs
+        - GUI
+
