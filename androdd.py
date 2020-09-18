@@ -31,6 +31,56 @@ option_0 = {
     'nargs': 1
 }
 option_1 = {
+    'name': ('-o', '--output'),from optparse import OptionParser
+
+from androguard import session
+from androguard.core import androconf
+from androguard.core.bytecode import method2dot, method2format
+from androguard.core.bytecodes import dvm
+from androguard.decompiler import decompiler
+import os
+import re
+import shutil
+import sys
+from optparse import OptionParser
+
+from androguard import session
+from androguard.core import androconf
+from androguard.core.bytecode import method2dot, method2format
+from androguard.core.bytecodes import dvm
+from androguard.decompiler import decompiler
+
+option_0 = {
+    'name': ('-i', '--input'),
+    'help': 'file : use this filename',
+    'nargs': 1
+}
+option_1 = {
+    'name': ('-o', '--output'),from optparse import OptionParser
+
+from androguard import session
+from androguard.core import androconf
+from androguard.core.bytecode import method2dot, method2format
+from androguard.core.bytecodes import dvm
+from androguard.decompiler import decompiler
+import os
+import re
+import shutil
+import sys
+from optparse import OptionParser
+
+from androguard import session
+from androguard.core import androconf
+from androguard.core.bytecode import method2dot, method2format
+from androguard.core.bytecodes import dvm
+from androguard.decompiler import decompiler
+
+option_0 = {
+    'name': ('-i', '--input'),
+    'help': 'file : use this filename',
+    'nargs': 1
+}
+option_1 = {
     'name': ('-o', '--output'),
     'help': 'base directory to output all files',
     'nargs': 1
