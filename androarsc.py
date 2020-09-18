@@ -93,7 +93,25 @@ def main(options, arguments):
             print("Unknown file type")
             return
 
-        if not options.package and not options.type and not options.locale:
+ 
+
+def main(options, arguments):
+    if options.input is not None:
+        buff = ""
+
+        arscobj = None
+        ret_type = androconf.is_android(options.input)
+        if ret_type == "APK":
+            a = apk.APK(options.input)
+            arscobj = a.get_android_resources()
+        elif ret_type == "ARSC":
+            arscobj = apk.ARSCParser(read(options.input))
+        else:
+            print("Unknown file type")
+            return
+
+ 
+if not options.package and not options.type and not options.locale:
             buff = ""
             for package in arscobj.get_packages_names():
                 buff += package + "\n"
