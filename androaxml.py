@@ -58,17 +58,7 @@ options = [option_0, option_1, option_2]
 
 
 def main(options, arguments):
-    if options.input is not None:
-        buff = ""
 
-        ret_type = androconf.is_android(options.input)
-        if ret_type == "APK":
-            a = apk.APK(options.input)
-            buff = a.get_android_manifest_xml().toprettyxml(encoding="utf-8")
-        elif ".xml" in options.input:
-            ap = apk.AXMLPrinter(read(options.input))
-            buff = minidom.parseString(ap.get_buff()).toprettyxml(
-                encoding="utf-8")
         else:
             print("Unknown file type")
             return
