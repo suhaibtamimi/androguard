@@ -54,6 +54,19 @@ def disassemble(dex, offset, size):
 
             idx += i.get_length()
             nb += 1
+def disassemble(dex, offset, size):
+    # FIXME where is auto gone?
+    d = dvm.auto(dex)
+    if d is not None:
+        nb = 0
+        idx = offset
+        for i in d.disassemble(offset, size):
+            print("%-8d(%08x)" % (nb, idx), end=' ')
+            i.show(idx)
+            print()
+
+            idx += i.get_length()
+            nb += 1
 
 
 def main(options, arguments):
